@@ -1,0 +1,26 @@
+{
+  "name": "SpaceInvaders",
+  "version": "1.0.0",
+  "description": "### Background",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logistics21/SpaceInvaders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Logistics21/SpaceInvaders/issues"
+  },
+  "homepage": "https://github.com/Logistics21/SpaceInvaders#readme",
+  "dependencies": {
+    "firebase": "^4.1.3"
+  }
+}

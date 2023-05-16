@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAC-MAN</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#212529"/>
+  <link rel="shortcut icon" type="image/png" href="pacman-icon.png">
+  <link rel="shortcut icon" sizes="196x196" href="pacman-icon.png">
+  <link rel="apple-touch-icon" href="pacman-icon.png">
+
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="../lib/vue.min.js"></script>
+  <script src="../lib/dialog-polyfill.js"></script>
+  <script src="../lib/highlight.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/Pacman.css" />
+
+
+  <script type="text/javascript" src="lib/AStar.js"></script>
+
+  <script type="text/javascript" src="src/Keyboard.js"></script>
+  <script type="text/javascript" src="src/Game.js"></script>
+  <script type="text/javascript" src="src/StartupScene.js"></script>
+  <script type="text/javascript" src="src/PlayScene.js"></script>
+  <script type="text/javascript" src="src/ReadyMessage.js"></script>
+  <script type="text/javascript" src="src/Pacman.js"></script>
+  <script type="text/javascript" src="src/Wall.js"></script>
+  <script type="text/javascript" src="src/Rect.js"></script>
+  <script type="text/javascript" src="src/Pellet.js"></script>
+  <script type="text/javascript" src="src/Gate.js"></script>
+  <script type="text/javascript" src="src/Ghost.js"></script>
+  <script type="text/javascript" src="src/Sprite.js"></script>
+  <script type="text/javascript" src="src/Util.js"></script>
+  <script type="text/javascript" src="src/PowerPellet.js"></script>
+  <script type="text/javascript" src="src/Position.js"></script>
+  <script type="text/javascript" src="src/PointsMessage.js"></script>
+  <script type="text/javascript" src="src/PressEnterText.js"></script>
+  <script type="text/javascript" src="src/BlinkTimer.js"></script>
+  <script type="text/javascript" src="src/PacmanPlaySceneStrategy.js"></script>
+  <script type="text/javascript" src="src/PacmanStartupSceneStrategy.js"></script>
+  <script type="text/javascript" src="src/EventManager.js"></script>
+  <script type="text/javascript" src="src/PacmanDiesPause.js"></script>
+  <script type="text/javascript" src="src/PacmanDiesStrategy.js"></script>
+  <script type="text/javascript" src="src/Cherry.js"></script>
+
+  <script type="text/javascript" src="lib/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="lib/Stats.js"></script>
+
+  <script type="text/javascript" src="src/FPSCounter.js"></script>
+  <script type="text/javascript" src="src/GameRunner.js"></script>
+  <script type="text/javascript" src="src/ImageManager.js"></script>
+  <script type="text/javascript" src="src/SoundManager.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var gameRunner = new GameRunner();
+      gameRunner.run();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="main-menu" id="main">
+  </div>
+  <div class="exit">
+    <a class="nes-btn is-error" href="../main_menu.html">EXIT</a>
+  </div>
+</body>
+</html>
